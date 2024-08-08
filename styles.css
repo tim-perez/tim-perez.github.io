@@ -10,7 +10,7 @@
 
 body {
   font-family: "Oswald", sans-serif;
-  background-color: rgb(240, 240, 240);
+  background-color: white;
   color: black;
   overflow-x: hidden;
   letter-spacing: 1.5px;
@@ -86,45 +86,148 @@ a:hover {
 }
 
 .mobile-menu {
-  position: relative;
-  display: flex;
-  font-size: 1rem;;
-}
-
-.menu-links {
   display: flex;
   flex-direction: column;
-  position: absolute;
-  top: 3vh;
-  right: 2vw;
-  width: fit-content;
-  height: 15vh;
-  align-items: center;
+  justify-content: center;
+  background-color: lightblue;
 }
 
-#menu {
-  top: 15vh;
-  cursor: pointer;
+.mobile-menu {
+  background-color: lightcoral;
 }
 
-.menu-links li {
+#menu-open {
+  width: 100%;
+}
+
+.mobile-menu li{
   list-style: none;
+  text-align: center;
 }
-
 
 .hidden {
   display: none;
 }
 
-
-
 /* SECTIONS */
+
+section {
+  padding-top: 4vh;
+  height: 96vh;
+  margin: 0 10rem;
+  box-sizing: border-box;
+  min-height: fit-content;
+}
+
+.section-container {
+  display: flex;
+}
 
 /* PROFILE SECTION */
 
+#profile {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  height: 80vh;
+}
+
+.section-image-container {
+  display: flex;
+  height: 400px;
+  width: 400px;
+  margin: auto 0;
+}
+
+#profile-pic {
+  border-radius: 50%;
+}
+
+.section-text {
+  align-self: center;
+  text-align: center;
+}
+
+.section-text p {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.section-text-p1 {
+  text-align: center;
+}
+
+.section-text-p2 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-size: 3rem;
+  text-align: center;
+}
+
+#socials-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+
 /* ICONS */
 
+.icon {
+  cursor: pointer;
+  height: 2rem;
+}
+
 /* BUTTONS */
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.button {
+  font-weight: 600;
+  transition: all 300ms ease;
+  padding: 1rem;
+  width: 8rem;
+  border-radius: 2rem;
+}
+
+.button-color-1,
+.button-color-2 {
+  border: rgb(53, 53, 53) 0.1rem solid;
+}
+
+.button-color-1:hover,
+.button-color-2:hover {
+  cursor: pointer;
+}
+
+.button-color-1,
+.button-color-2:hover {
+  background: rgb(53, 53, 53);
+  color: white;
+}
+
+.button-color-1:hover {
+  background: rgb(0, 0, 0);
+}
+
+.button-color-2 {
+  background: none;
+}
+
+.button-color-2:hover {
+  border: rgb(255, 255, 255) 0.1rem solid;
+}
+
+.button-container {
+  gap: 1rem;
+}
 
 /* ABOUT SECTION */
 
