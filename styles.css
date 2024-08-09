@@ -89,15 +89,16 @@ a:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: lightblue;
 }
 
-.mobile-menu {
-  background-color: lightcoral;
+#menu {
+  width: 2rem;
 }
 
-#menu-open {
-  width: 100%;
+.menu-links {
+  position: absolute;
+  top: 10vh;
+  right: 20vw;
 }
 
 .mobile-menu li{
