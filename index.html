@@ -1,13 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <title>First Website</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Welcome to my website</h1>
-    <p>My name is Tim Perez</p>
+  <nav id="desktop-nav">
+    <div class="logo">Tim's Portfolio</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="mobile-nav">
+    <div class="logo">Tim's Portfolio</div>
+    <div class="mobile-menu">
+      <img 
+        src="images/menu.svg"
+        alt="menu" 
+        id="menu"
+        onclick="toggleMenu()"
+      />
+      <img 
+        src="images/close.svg"
+        alt="menu" 
+        id="close"
+        onclick="toggleMenu()"
+      />
+      <ul class="menu-links hidden" id="menu-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>  
+  </nav>
+  <section id="profile">
+    <div class="section-image-container">
+      <img src="images/profile-pic.jpg" alt="profile-pic" id="profile-pic">
+    </div>
+    <div class="section-text">
+      <p class="section-text-p1">Hello, I'm</p>
+      <h1 class="title">Tim Perez</h1>
+      <p class="section-text-p2">Aspiring Software Engineer</p>
+      <div class="button-container">
+        <button 
+          class="button button-color-2"
+          onclick="window.open('./images/Tim-Perez.pdf')"
+        >
+          Download CV
+        </button>
+        <button class="button button-color-1" onclick="location.href='./#contact'">
+          Contact Info
+        </button>
+      </div>
+      <div id="socials-container">
+        <img
+          src="images/github.svg"
+          alt="github"
+          class="icon"
+          onclick=""
+        >
+        <img
+          src="images/linkedin.svg"
+          alt="linkedin"
+          class="icon"
+          onclick=""
+        >
+      </div>
+    </div>
+  </section>
+  <script src="scripts.js"></script>
 </body>
 </html>

@@ -1,0 +1,251 @@
+/* GENERAL */
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Oswald", sans-serif;
+  background-color: white;
+  color: black;
+  overflow-x: hidden;
+  letter-spacing: 1.5px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* TRANSITION */
+
+/* DESKTOP NAV */
+
+nav,
+.nav-links{
+  display: flex;
+}
+
+nav {
+  justify-content: space-around;
+  align-items: center;
+  height: 15vh;
+}
+
+.nav-links {
+  list-style: none;
+  font-size: 1.5rem;
+  gap: 2rem;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  position: relative;
+}
+
+a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.1em;
+  background-color: rgb(80, 176, 255);
+  opacity: 0;
+  transition: opacity 300ms, transform 300ms;
+}
+
+a:hover::after,
+a:focus::after {
+  opacity: 1;
+  transform: translate3d(0, 0.2em, 0);
+}
+
+a:hover {
+  color: rgb(0, 140, 255);
+  transition: all .3s ease;
+}
+
+.logo {
+  font-size: 2rem;
+}
+
+.logo:hover {
+  cursor: default;
+}
+
+
+/* MOBILE NAV */
+
+#mobile-nav {
+  display: none;
+}
+
+.mobile-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: lightblue;
+}
+
+.mobile-menu {
+  background-color: lightcoral;
+}
+
+#menu-open {
+  width: 100%;
+}
+
+.mobile-menu li{
+  list-style: none;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+/* SECTIONS */
+
+section {
+  padding-top: 4vh;
+  height: 96vh;
+  margin: 0 10rem;
+  box-sizing: border-box;
+  min-height: fit-content;
+}
+
+.section-container {
+  display: flex;
+}
+
+/* PROFILE SECTION */
+
+#profile {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  height: 80vh;
+}
+
+.section-image-container {
+  display: flex;
+  height: 400px;
+  width: 400px;
+  margin: auto 0;
+}
+
+#profile-pic {
+  border-radius: 50%;
+}
+
+.section-text {
+  align-self: center;
+  text-align: center;
+}
+
+.section-text p {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.section-text-p1 {
+  text-align: center;
+}
+
+.section-text-p2 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-size: 3rem;
+  text-align: center;
+}
+
+#socials-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+
+/* ICONS */
+
+.icon {
+  cursor: pointer;
+  height: 2rem;
+}
+
+/* BUTTONS */
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.button {
+  font-weight: 600;
+  transition: all 300ms ease;
+  padding: 1rem;
+  width: 8rem;
+  border-radius: 2rem;
+}
+
+.button-color-1,
+.button-color-2 {
+  border: rgb(53, 53, 53) 0.1rem solid;
+}
+
+.button-color-1:hover,
+.button-color-2:hover {
+  cursor: pointer;
+}
+
+.button-color-1,
+.button-color-2:hover {
+  background: rgb(53, 53, 53);
+  color: white;
+}
+
+.button-color-1:hover {
+  background: rgb(0, 0, 0);
+}
+
+.button-color-2 {
+  background: none;
+}
+
+.button-color-2:hover {
+  border: rgb(255, 255, 255) 0.1rem solid;
+}
+
+.button-container {
+  gap: 1rem;
+}
+
+/* ABOUT SECTION */
+
+/* EXPERIENCE SECTION */
+
+/* PROJECTS SECTION */
+
+/* CONTACT */
+
+/* FOOTER SECTION */
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1200px) {
+  #desktop-nav {
+    display: none;
+  }
+  #mobile-nav {
+    display: flex;
+  }
+}
