@@ -20,8 +20,6 @@ html {
   scroll-behavior: smooth;
 }
 
-/* TRANSITION */
-
 /* DESKTOP NAV */
 
 nav,
@@ -97,8 +95,8 @@ a:hover {
 
 .menu-links {
   position: absolute;
-  top: 10vh;
-  right: 20vw;
+  top: 9vh;
+  right: 18vw;
 }
 
 .mobile-menu li{
